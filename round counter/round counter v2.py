@@ -1,9 +1,8 @@
-r2=0
-
 def round_counter(r):
     r += 1
+    print("round {}".format(r))
     return r
 
 
-print(round_counter(round_counter(round_counter(r2))))
-
+r = 0
+r = round_counter(r)
