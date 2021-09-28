@@ -37,5 +37,9 @@ while True:
 
 if answer == correct_answer:
     win = True
+    print("You got this question right \n "
+          "Well done ☺")
 else:
     win = False
+    print("You got this question wrong \n "
+          "the right answer is {}".format(correct_answer[question_num]))
