@@ -1,6 +1,3 @@
-r =1
-
-
 import random
 
 askquestion = [        "what is the best colour?",   "what is the best colour?"]
@@ -38,9 +35,12 @@ def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
 
     if answer == correct_answer:
         win = True
+        print("You got this question right \n "
+          "Well done ☺")
     else:
         win = False
+        print("You got this question wrong \n "
+          "the right answer is {}".format(correct_answer[question_num]))
 
     return win
 
-win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer)
