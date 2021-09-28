@@ -1,6 +1,6 @@
 import random
 
-askquestion = [        "what is the best colour?",   "what is the best colour?"]
+askquestion = [     "what is the best colour?",   "what is the best colour?"]
 answer1 = [         "blue",                       "blue"]
 answer2 = [         "orange",                     "orange"]
 answer3 = [         "red",                        "red"]
