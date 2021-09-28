@@ -3,7 +3,7 @@ no = ["no", "n"]
 
 
 def played_before():
-    while True:
+    while True :
         played_before = input("have you played_before?").strip().lower()
         if played_before in yes:
             print("starting quiz")
@@ -15,6 +15,3 @@ def played_before():
             break
         else:
             print("<error> please enter yes or no")
-
-
-played_before()
