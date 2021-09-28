@@ -1,11 +1,23 @@
-import questions.questions_v2
-import played_before.played_before_v3.round_counter
-import round_counter.round_counter_v2
-import score_counter.score_counter_v2
+from played_before.played_before_v3 import played_before
+from questions.questions_v2 import questions
+from score_counter.score_counter_v2 import score_counter
+from round_counter.round_counter_v2 import round_counter
 
+r=0
+score = 0
+askquestion = [     "what is the best colour?",   "what is the best colour?"]
+answer1 = [         "blue",                       "blue"]
+answer2 = [         "orange",                     "orange"]
+answer3 = [         "red",                        "red"]
+answer4 = [         "green",                      "green"]
+correct_answer = [  "blue",                       "orange"]
+yes = ["yes", "y"]
+no = ["no", "n"]
 
 
 played_before()
-r = round_counter(r)
-win = questions()
-score_counter
+while True :
+
+    r = round_counter(r)
+    win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer)
+    score = score_counter(win, score)

@@ -5,4 +5,3 @@ def round_counter(r):
 
 
 r = 0
-r = round_counter(r)

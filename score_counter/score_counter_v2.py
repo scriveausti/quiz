@@ -17,4 +17,4 @@ def score_counter(w_l, s):
 
 win = False
 score = 0
-score = score_counter(win, score)
+
