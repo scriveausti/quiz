@@ -7,12 +7,12 @@ from Welcome.welcome_v2 import welcome
 def main():
     r=0
     score = 0
-    askquestion = [     "what is the best colour?",   "what is the best colour?"]
-    answer1 = [         "blue",                       "blue"]
-    answer2 = [         "orange",                     "orange"]
-    answer3 = [         "red",                        "red"]
-    answer4 = [         "green",                      "green"]
-    correct_answer = [  "blue",                       "orange"]
+    question = [        "question",                 "question"]
+    answer1 = [         "wrong answer",             "wrong answer"]
+    answer2 = [         "right answer",             "right answer"]
+    answer3 = [         "wrong answer",             "wrong answer"]
+    answer4 = [         "wrong answer",             "wrong answer"]
+    correct_answer = [  "right answer",             "right answer"]
     yes = ["yes", "y"]
     no = ["no", "n"]
 
