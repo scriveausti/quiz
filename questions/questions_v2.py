@@ -1,11 +1,11 @@
 import random
 
-askquestion = [     "what is the best colour?",   "what is the best colour?"]
-answer1 = [         "blue",                       "blue"]
-answer2 = [         "orange",                     "orange"]
-answer3 = [         "red",                        "red"]
-answer4 = [         "green",                      "green"]
-correct_answer = [  "blue",                       "orange"]
+question = [        "question",                 "question"]
+answer1 = [         "wrong answer",             "wrong answer"]
+answer2 = [         "right answer",             "right answer"]
+answer3 = [         "wrong answer",             "wrong answer"]
+answer4 = [         "wrong answer",             "wrong answer"]
+correct_answer = [  "right answer",             "right answer"]
 
 def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
     question_num = random.randint(0,1)
@@ -33,7 +33,7 @@ def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
             print("")
             print("<error> please enter A, B, C or D")
 
-    if answer == correct_answer:
+    if answer == correct_answer[question_num]:
         win = True
         print("You got this question right \n "
           "Well done ☺")

@@ -2,12 +2,12 @@ r =1
 
 import random
 
-question = [        "what is the best colour?",   "what is the best colour?"]
-answer1 = [         "blue",                       "blue"]
-answer2 = [         "orange",                     "orange"]
-answer3 = [         "red",                        "red"]
-answer4 = [         "green",                      "green"]
-correct_answer = [  "blue",                       "orange"]
+question = [        "question",                 "question"]
+answer1 = [         "wrong answer",             "wrong answer"]
+answer2 = [         "right answer",             "right answer"]
+answer3 = [         "wrong answer",             "wrong answer"]
+answer4 = [         "wrong answer",             "wrong answer"]
+correct_answer = [  "right answer",             "right answer"]
 
 
 question_num = random.randint(0,1)
@@ -35,7 +35,7 @@ while True:
         print("")
         print("<error> please enter A, B, C or D")
 
-if answer == correct_answer:
+if answer == correct_answer[question_num]:
     win = True
     print("You got this question right \n "
           "Well done ☺")
