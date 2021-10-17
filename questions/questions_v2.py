@@ -1,6 +1,6 @@
 import random
 
-question = [        "question",                 "question"]
+askquestion = [        "question",                 "question"]
 answer1 = [         "wrong answer",             "wrong answer"]
 answer2 = [         "right answer",             "right answer"]
 answer3 = [         "wrong answer",             "wrong answer"]

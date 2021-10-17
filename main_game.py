@@ -7,7 +7,7 @@ from Welcome.welcome_v2 import welcome
 def main():
     r=0
     score = 0
-    question = [        "question",                 "question"]
+    askquestion = [        "question",                 "question"]
     answer1 = [         "wrong answer",             "wrong answer"]
     answer2 = [         "right answer",             "right answer"]
     answer3 = [         "wrong answer",             "wrong answer"]
