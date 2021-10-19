@@ -3,6 +3,9 @@ from questions.questions_v2 import questions
 from score_counter.score_counter_v2 import score_counter
 from round_counter.round_counter_v2 import round_counter
 from Welcome.welcome_v2 import welcome
+from yesno.yesno_v1 import yesno
+from user_questions.user_questions_v1 import user_questions
+
 
 def main():
     r=0
