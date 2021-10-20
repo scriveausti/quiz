@@ -15,4 +15,3 @@ def user_questions(askquestion, answer1, answer2, answer3, answer4, correct_answ
             output_no = ""
             y = yesno(yes, no, question, output_yes, output_no)
 
-user_questions(askquestion, answer1, answer2, answer3, answer4, correct_answer, yes, no)

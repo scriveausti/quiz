@@ -20,7 +20,7 @@ def main():
     correct_answer = [  "right answer",             "right answer"]
     yes = ["yes", "y"]
     no = ["no", "n"]
-
+    len(askquestion)
     #functions
     welcome()
     played_before()
@@ -28,5 +28,5 @@ def main():
         r = round_counter(r)
         win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer)
         score = score_counter(win, score)
-
+    user_questions(askquestion, answer1, answer2, answer3, answer4, correct_answer, yes, no)
 main()
