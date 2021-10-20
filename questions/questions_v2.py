@@ -1,15 +1,10 @@
 import random
 
-askquestion = [        "question",                 "question"]
-answer1 = [         "wrong answer",             "wrong answer"]
-answer2 = [         "right answer",             "right answer"]
-answer3 = [         "wrong answer",             "wrong answer"]
-answer4 = [         "wrong answer",             "wrong answer"]
-correct_answer = [  "right answer",             "right answer"]
-
+#defines the questions function
 def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
     question_num = random.randint(0,1)
     while True:
+        #prints the questions and asks the user for the answer
         print("")
         print("question {} {}".format(r, askquestion[question_num]))
         print("a. {}" .format(answer1[question_num]))
@@ -17,6 +12,7 @@ def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
         print("c. {}" .format(answer3[question_num]))
         print("d. {}" .format(answer4[question_num]))
         answer = input("A, B, C or D").strip().lower()
+        #checks what the user inputed and converts it
         if answer == "a" :
             answer = answer1[question_num]
             break
@@ -30,9 +26,10 @@ def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
             answer = answer4[question_num]
             break
         else:
-            print("")
+            print("\n \n \n \n \n \n")
             print("<error> please enter A, B, C or D")
-
+            print("")
+    #chscks the answer
     if answer == correct_answer[question_num]:
         win = True
         print("You got this question right \n "
@@ -41,6 +38,6 @@ def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
         win = False
         print("You got this question wrong \n "
           "the right answer is {}".format(correct_answer[question_num]))
-
+    #returns if the got it right or not
     return win
 

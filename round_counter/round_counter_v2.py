@@ -1,3 +1,5 @@
+
+#defines round counter function
 def round_counter(r):
     r += 1
     print("round {}".format(r))

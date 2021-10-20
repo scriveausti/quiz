@@ -1,7 +1,7 @@
 yes = ["yes", "y"]
 no = ["no", "n"]
 
-
+#defines the yes no function
 def yesno(yes, no, question, output_yes, output_no):
     while True:
         answer = input("{}".format(question))

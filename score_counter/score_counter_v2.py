@@ -1,3 +1,4 @@
+#defines the score counter function
 def score_counter(w_l, s):
     if w_l == False:
         print("")

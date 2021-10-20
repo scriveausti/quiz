@@ -1,3 +1,4 @@
+#imports all the sub files
 from played_before.played_before_v3 import played_before
 from questions.questions_v2 import questions
 from score_counter.score_counter_v2 import score_counter
@@ -8,6 +9,7 @@ from user_questions.user_questions_v1 import user_questions
 
 
 def main():
+    #variabales for the functions
     r=0
     score = 0
     askquestion = [        "question",                 "question"]
@@ -19,6 +21,7 @@ def main():
     yes = ["yes", "y"]
     no = ["no", "n"]
 
+    #functions
     welcome()
     played_before()
     while True :
