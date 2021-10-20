@@ -6,7 +6,7 @@ from round_counter.round_counter_v2 import round_counter
 from Welcome.welcome_v2 import welcome
 from yesno.yesno_v1 import yesno
 from user_questions.user_questions_v1 import user_questions
-
+from continue_playing.continue_playing_v1 import continue_playing
 
 def main():
     #variabales for the functions
@@ -28,5 +28,9 @@ def main():
         r = round_counter(r)
         win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer)
         score = score_counter(win, score)
+        breakey = continue_playing()
+        if breakey == True:
+            break
     user_questions(askquestion, answer1, answer2, answer3, answer4, correct_answer, yes, no)
+
 main()
