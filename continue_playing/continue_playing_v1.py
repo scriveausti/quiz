@@ -5,8 +5,8 @@ def continue_playing():
     questions = "do you want to continue playing?"
     output_yes = ""
     output_no = ""
-    y = yesno(yes, no, question, output_yes, output_no)
+    y = yesno(yes, no, questions, output_yes, output_no)
     if y == False:
-        breakey = true
+        breakey = True
     return breakey
 
