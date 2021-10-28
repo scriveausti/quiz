@@ -24,13 +24,24 @@ def main():
     #functions
     welcome()
     played_before()
-    while True :
-        r = round_counter(r)
-        win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer)
-        score = score_counter(win, score)
-        breakey = continue_playing()
+    while True:
+        while True :
+            r = round_counter(r)
+            win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer)
+            score = score_counter(win, score)
+            breakey = continue_playing(False)
+            if breakey == True:
+                break
+        output_user_questions = user_questions(yes, no)
+        askquestion =+ output_user_questions[0]
+        answer1 =+ output_user_questions[1]
+        answer2 =+ output_user_questions[2]
+        answer3 =+ output_user_questions[3]
+        answer4 =+ output_user_questions[4]
+        correct_answer =+ output_user_questions[5]
+        breakey = continue_playing(True)
         if breakey == True:
             break
-    user_questions(askquestion, answer1, answer2, answer3, answer4, correct_answer, yes, no)
+
 
 main()
