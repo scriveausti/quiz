@@ -1,8 +1,8 @@
 import random
 
 #defines the questions function
-def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer):
-    question_num = random.randint(0,1)
+def questions(r,askquestion,answer1,answer2,answer3,answer4,correct_answer,length):
+    question_num = random.randint(0,length)
     while True:
         #prints the questions and asks the user for the answer
         print("")

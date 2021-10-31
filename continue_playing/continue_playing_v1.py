@@ -9,7 +9,7 @@ def continue_playing(play_again):
         y = yesno(yes, no, questions, output_yes, output_no)
         if y == False:
             breakey = True
-        return breakey
+            return breakey
     elif play_again == True:
         questions = "do you want to play again ?"
         output_yes = ""
@@ -17,5 +17,5 @@ def continue_playing(play_again):
         y = yesno(yes, no, questions, output_yes, output_no)
         if y == False:
             breakey = True
-        return breakey
+            return breakey
 

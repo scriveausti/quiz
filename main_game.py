@@ -20,14 +20,14 @@ def main():
     correct_answer = [  "right answer",             "right answer"]
     yes = ["yes", "y"]
     no = ["no", "n"]
-    len(askquestion)
+    length = len(askquestion) - 1
     #functions
     welcome()
     played_before()
     while True:
         while True :
             r = round_counter(r)
-            win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer)
+            win = questions(r, askquestion, answer1, answer2, answer3, answer4, correct_answer, length)
             score = score_counter(win, score)
             breakey = continue_playing(False)
             if breakey == True:
