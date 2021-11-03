@@ -55,7 +55,3 @@ def user_questions(yes, no):
             print("question added")
             output_user_questions = [question_add, answer_1_add, answer_2_add, answer_3_add, answer_4_add, correct_answer_add]
             return output_user_questions
-
-
-while True:
-    user_questions(yes, no)
