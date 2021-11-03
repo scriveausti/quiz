@@ -32,16 +32,18 @@ def main():
             breakey = continue_playing(False)
             if breakey == True:
                 break
-        output_user_questions = user_questions(yes, no)
-        askquestion =+ output_user_questions[0]
-        answer1 =+ output_user_questions[1]
-        answer2 =+ output_user_questions[2]
-        answer3 =+ output_user_questions[3]
-        answer4 =+ output_user_questions[4]
-        correct_answer =+ output_user_questions[5]
-        breakey = continue_playing(True)
-        if breakey == True:
-            break
+        with open('question_storage.txt', 'r') as q:
+            output_user_questions = [{}].format(q.readline())
+
+            askquestion =+ output_user_questions[0]
+            answer1 =+ output_user_questions[1]
+            answer2 =+ output_user_questions[2]
+            answer3 =+ output_user_questions[3]
+            answer4 =+ output_user_questions[4]
+            correct_answer =+ output_user_questions[5]
+            breakey = continue_playing(True)
+            if breakey == True:
+                break
 
 
 main()

@@ -52,6 +52,13 @@ def user_questions(yes, no):
                     y = yesno(yes, no, question, output_yes, output_no)
                     if y == True:
                         break
-            print("question added")
-            output_user_questions = [question_add, answer_1_add, answer_2_add, answer_3_add, answer_4_add, correct_answer_add]
-            return output_user_questions
+                print("question added")
+                with open('question_storage.txt', 'r+') as q :
+                    question_read = q.readline()
+                    question_len = len(question_read)
+                    while question_len > 0:
+                        question_read = q.readline()
+                        question_len = len(question_read)
+                        q.write('{}, {}, {}, {}, {},'.format(answer_1_add, answer_2_add, answer_3_add, answer_4_add, correct_answer_add))
+
+    return

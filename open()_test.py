@@ -1,11 +1,15 @@
+test1 = 'this is a test'
+test2 = 'this is also a test'
+
+
 with open('question_storage.txt', 'r+') as f:
     question_read = f.readline()
     question_len = len(question_read)
     while question_len > 0:
-        print(question_read, end='')
         question_read = f.readline()
         question_len = len(question_read)
     f.write('')
-    f.write('\n test')
+    f.write('{} {}\n'.format(test1, test2))
     f.seek(0)
-    print(f.read)
+    read = f.read()
+    print(read)
