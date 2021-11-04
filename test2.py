@@ -7,7 +7,7 @@ correct_answer = ['test']
 
 
 with open('question_storage.py', 'r') as q:
-    ask_q = q.readline()
+    output_list
     while len(ask_q) > 0:
         askquestion.append(ask_q)
         print('1', askquestion)

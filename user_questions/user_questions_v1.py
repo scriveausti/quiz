@@ -53,7 +53,7 @@ def user_questions(yes, no):
                     if y == True:
                         break
                 print("question added")
-                with open('question_storage.txt', 'r+') as q :
+                with open('question_storage.py', 'r+') as q :
                     question_read = q.readline()
                     question_len = len(question_read)
                     while question_len > 0:
