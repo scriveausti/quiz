@@ -59,6 +59,11 @@ def user_questions(yes, no):
                     while question_len > 0:
                         question_read = q.readline()
                         question_len = len(question_read)
-                        q.write('{}, {}, {}, {}, {},'.format(answer_1_add, answer_2_add, answer_3_add, answer_4_add, correct_answer_add))
+                        q.write()
+                        q.write('{}'.format(answer_1_add))
+                        q.write('{}'.format(answer_2_add))
+                        q.write('{}'.format(answer_3_add))
+                        q.write('{}'.format(answer_4_add))
+                        q.write('{}'.format(correct_answer_add))
 
     return

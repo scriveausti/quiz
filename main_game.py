@@ -33,6 +33,7 @@ def main():
                 breakey = continue_playing(False)
                 if breakey == True:
                     break
+
             output_user_questions = [{}].format(q.readline())
             while len(output_user_questions) > 0:
                 askquestion =+ output_user_questions[0]
