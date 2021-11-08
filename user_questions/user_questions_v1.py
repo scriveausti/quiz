@@ -16,7 +16,6 @@ def user_questions(yes, no):
         output_no = " "
         y = yesno(yes, no, question, output_yes, output_no)
         if y == False:
-            print("thanks for playing")
             break
         else:
             while True:
@@ -59,11 +58,11 @@ def user_questions(yes, no):
                     while question_len > 0:
                         question_read = q.readline()
                         question_len = len(question_read)
-                        q.write()
-                        q.write('{}'.format(answer_1_add))
-                        q.write('{}'.format(answer_2_add))
-                        q.write('{}'.format(answer_3_add))
-                        q.write('{}'.format(answer_4_add))
-                        q.write('{}'.format(correct_answer_add))
+                    q.write('{}'.format(question_add))
+                    q.write('{}'.format(answer_1_add))
+                    q.write('{}'.format(answer_2_add))
+                    q.write('{}'.format(answer_3_add))
+                    q.write('{}'.format(answer_4_add))
+                    q.write('{}'.format(correct_answer_add))
 
     return
