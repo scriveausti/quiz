@@ -37,11 +37,17 @@ def main():
             if breakey == True:
                 break
 
-        uesr_output = user_questions(yes,no)
+        output_user_questions = user_questions(yes,no)
         breakey = continue_playing(True)
         if breakey == True:
             break
-
+        else:
+            askquestion = + output_user_questions[0]
+            answer1 = + output_user_questions[1]
+            answer2 = + output_user_questions[2]
+            answer3 = + output_user_questions[3]
+            answer4 = + output_user_questions[4]
+            correct_answer = + output_user_questions[5]
 
 
     main()
